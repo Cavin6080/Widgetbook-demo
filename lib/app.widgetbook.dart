@@ -12,18 +12,13 @@ class KnobsExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Widgetbook.material(
       addons: [
-        // DeviceAddon(
-        //   setting: DeviceSetting(
-        //     devices: [
-        //       Apple.iPhone11,
-        //       Apple.iPhone12,
-        //     ],
-        //     activeDevice: Apple.iPhone12,
-        //   ),
-        // ),
         TextScaleAddon(
           setting: TextScaleSetting.firstAsSelected(
-            textScales: [1, 2],
+            textScales: [
+              1.0,
+              1.25,
+              1.5,
+            ],
           ),
         ),
         MaterialThemeAddon(
@@ -41,26 +36,25 @@ class KnobsExample extends StatelessWidget {
           ),
         ),
         FrameAddon(
-          setting: FrameSetting(
-            activeFrame: NoFrame(),
+          setting: FrameSetting.firstAsSelected(
             frames: [
-              NoFrame(),
               DefaultDeviceFrame(
                 setting: DeviceSetting(
                   devices: [
-                    Apple.iPhone12,
                     Apple.iPhone13,
+                    Samsung.s21ultra,
                     Apple.iPadMini,
                     Desktop.desktop1080p,
                   ],
                   activeDevice: Apple.iPhone13,
                 ),
               ),
+              NoFrame(),
               WidgetbookFrame(
                 setting: DeviceSetting(
                   devices: [
-                    Apple.iPhone12,
                     Apple.iPhone13,
+                    Samsung.s21ultra,
                     Apple.iPadMini,
                     Desktop.desktop1080p,
                   ],
@@ -178,6 +172,28 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: widget.showToolTip ? 'Increment' : null,
         child: Icon(widget.iconData ?? Icons.add),
       ),
+    );
+  }
+}
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Widgetbook.material(
+      addons: [
+        TextScaleAddon(
+          setting: TextScaleSetting.firstAsSelected(
+            textScales: [
+              1.0,
+              1.25,
+              1.5,
+            ],
+          ),
+        )
+      ],
+      directories: [],
     );
   }
 }
