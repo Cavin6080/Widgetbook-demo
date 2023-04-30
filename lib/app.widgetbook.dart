@@ -11,7 +11,66 @@ class KnobsExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Widgetbook.material(
-      addons: [],
+      addons: [
+        DeviceAddon(
+          setting: DeviceSetting(
+            devices: [
+              Apple.iPhone11,
+              Apple.iPhone12,
+            ],
+            activeDevice: Apple.iPhone12,
+          ),
+        ),
+        TextScaleAddon(
+          setting: TextScaleSetting.firstAsSelected(
+            textScales: [1, 2],
+          ),
+        ),
+        MaterialThemeAddon(
+          setting: MaterialThemeSetting.firstAsSelected(
+            themes: [
+              WidgetbookTheme(
+                data: ThemeData.dark(),
+                name: 'dark',
+              ),
+              WidgetbookTheme(
+                data: ThemeData.light(),
+                name: 'light',
+              ),
+            ],
+          ),
+        ),
+        FrameAddon(
+          setting: FrameSetting(
+            activeFrame: NoFrame(),
+            frames: [
+              NoFrame(),
+              DefaultDeviceFrame(
+                setting: DeviceSetting(
+                  devices: [
+                    Apple.iPhone12,
+                    Apple.iPhone13,
+                    Apple.iPadMini,
+                    Desktop.desktop1080p,
+                  ],
+                  activeDevice: Apple.iPhone13,
+                ),
+              ),
+              WidgetbookFrame(
+                setting: DeviceSetting(
+                  devices: [
+                    Apple.iPhone12,
+                    Apple.iPhone13,
+                    Apple.iPadMini,
+                    Desktop.desktop1080p,
+                  ],
+                  activeDevice: Apple.iPhone13,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
       directories: [
         WidgetbookCategory(
           name: 'Pages',
