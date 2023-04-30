@@ -12,15 +12,15 @@ class KnobsExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Widgetbook.material(
       addons: [
-        DeviceAddon(
-          setting: DeviceSetting(
-            devices: [
-              Apple.iPhone11,
-              Apple.iPhone12,
-            ],
-            activeDevice: Apple.iPhone12,
-          ),
-        ),
+        // DeviceAddon(
+        //   setting: DeviceSetting(
+        //     devices: [
+        //       Apple.iPhone11,
+        //       Apple.iPhone12,
+        //     ],
+        //     activeDevice: Apple.iPhone12,
+        //   ),
+        // ),
         TextScaleAddon(
           setting: TextScaleSetting.firstAsSelected(
             textScales: [1, 2],
