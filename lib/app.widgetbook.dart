@@ -160,18 +160,18 @@ class _MyHomePageState extends State<MyHomePage> {
               widget.countLabel ??
                   'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            // Text(
+            //   '$_counter',
+            //   style: Theme.of(context).textTheme.headlineMedium,
+            // ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: widget.showToolTip ? 'Increment' : null,
-        child: Icon(widget.iconData ?? Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: _incrementCounter,
+      //   tooltip: widget.showToolTip ? 'Increment' : null,
+      //   child: Icon(widget.iconData ?? Icons.add),
+      // ),
     );
   }
 }
