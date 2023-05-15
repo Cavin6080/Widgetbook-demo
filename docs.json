@@ -1,0 +1,14 @@
+{
+    "name": "WidgetBook Code Generation Example",
+    "description": "This project explains code generation inside WidgetBook in Flutter",
+    "theme": "#36B9B9",
+    "sidebar": [
+      ["Home", "/"],
+      ["Another Page", "/another-page"]
+    ],
+    "variables": {
+      "versions": {
+        "latest": "1.0.0"
+      }
+    }
+  }
