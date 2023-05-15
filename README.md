@@ -3,6 +3,8 @@
 
 This repository contains the demo of **WidgetBook using Code Generation** in Flutter.
 
+![gif](https://github.com/Cavin6080/Widgetbook-demo/blob/widgetbook-annotation-example/assets/WidgetBook.gif)
+
 ## Setup
 
 - Download/Clone this project into your local system.
