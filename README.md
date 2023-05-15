@@ -1,16 +1,16 @@
-# widgetbook_demo_v3
 
-A new Flutter project.
+# WidgetBook With Code-Generation Demo
 
-## Getting Started
+This repository contains the demo of **WidgetBook using Code Generation** in Flutter.
 
-This project is a starting point for a Flutter application.
+## Setup
 
-A few resources to get you started if this is your first Flutter project:
+- Download/Clone this project into your local system.
+- Checkout the various branches that contains the example of WidgetBook 
+- Run `flutter pub get` inside your terminal
+- Run `flutter run -d macos -t lib/ui_catalogs.widgetbook.dart` to run your WidgetBook
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Authors
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [@cavin](https://github.com/cavin6080)
+
